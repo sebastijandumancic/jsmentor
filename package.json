@@ -10,23 +10,33 @@
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "concurrently": "^6.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
-    "typescript": "^4.1.2",
+    "typescript": "4.2.3",
     "web-vitals": "^1.0.1"
+  },
+  "devDependencies": {
+    "firebase": "^8.6.1",
+    "firebase-tools": "^9.10.2",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "eslint": "^7.24.0",
+    "eslint-config-prettier": "8.1.0",
+    "eslint-loader": "4.0.2",
+    "eslint-plugin-prettier": "3.3.1",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "eslint-plugin-simple-import-sort": "7.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "develop": "concurrently --kill-others 'yarn --cwd 'functions' watch' 'REACT_APP_FIREBASE_ENV=local yarn start' 'firebase emulators:start'",
+    "emulators:start": "firebase emulators:start",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
   },
   "browserslist": {
     "production": [

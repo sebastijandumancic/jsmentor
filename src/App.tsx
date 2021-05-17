@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import "./App.css";
+import { FirebaseProvider } from "./FirebaseProvider";
+import firebase from "firebase/app";
 
-function App() {
+export const App: React.FC = () => {
+  useEffect(() => {
+    firebase.app().firestore().collection("test").add({ test: "lala" });
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <FirebaseProvider>
+      <div className="App">
+        <h1>JS Mentor</h1>
 
-export default App;
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque,
+          repellendus. Illum incidunt consequuntur expedita delectus ex,
+          molestiae eligendi, fugit placeat recusandae maiores earum adipisci
+          ducimus nisi aliquid doloremque cumque sapiente?
+        </p>
+      </div>
+    </FirebaseProvider>
+  );
+};

@@ -1,0 +1,143 @@
+[debug] [2021-05-17T18:26:48.213Z] ----------------------------------------------------------------------
+[debug] [2021-05-17T18:26:48.214Z] Command:       /Users/sebdum/.nvm/versions/node/v12.18.3/bin/node /Users/sebdum/Repositories/jsmentor-firebase/node_modules/.bin/firebase emulators:start
+[debug] [2021-05-17T18:26:48.215Z] CLI Version:   9.10.2
+[debug] [2021-05-17T18:26:48.215Z] Platform:      darwin
+[debug] [2021-05-17T18:26:48.215Z] Node Version:  v12.18.3
+[debug] [2021-05-17T18:26:48.216Z] Time:          Mon May 17 2021 20:26:48 GMT+0200 (Central European Summer Time)
+[debug] [2021-05-17T18:26:48.216Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-05-17T18:26:48.223Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-05-17T18:26:48.223Z] > authorizing via signed-in user (sebastijan@prototyp.digital)
+[info] i  emulators: Starting emulators: auth, functions, firestore, hosting, pubsub {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth, functions, firestore, hosting, pubsub"}}
+[warn] ⚠  emulators: It seems that you are running multiple instances of the emulator suite for project jsmentor-firebase. This may result in unexpected behavior. 
+[debug] [2021-05-17T18:26:48.241Z] [hub] writing locator at /var/folders/x5/m55zjrv56vlfs8y73llyqqr40000gn/T/hub-jsmentor-firebase.json
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: database {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mdatabase\u001b[22m"}}
+[info] ✔  functions: Using node@12 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@12 from host."}}
+[debug] [2021-05-17T18:26:48.306Z] defaultcredentials: writing to file /Users/sebdum/.config/firebase/sebastijan_prototyp_digital_application_default_credentials.json
+[debug] [2021-05-17T18:26:48.308Z] Setting GAC to /Users/sebdum/.config/firebase/sebastijan_prototyp_digital_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/sebdum/.config/firebase/sebastijan_prototyp_digital_application_default_credentials.json"}}
+[debug] [2021-05-17T18:26:48.310Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/jsmentor-firebase/adminSdkConfig [none]
+[debug] [2021-05-17T18:26:48.809Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/jsmentor-firebase/adminSdkConfig 200
+[debug] [2021-05-17T18:26:48.809Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/jsmentor-firebase/adminSdkConfig {"projectId":"jsmentor-firebase","storageBucket":"jsmentor-firebase.appspot.com","locationId":"us-central"}
+[debug] [2021-05-17T18:26:49.165Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2021-05-17T18:26:49.166Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2021-05-17T18:26:49.166Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","/Users/sebdum/.cache/firebase/emulators/cloud-firestore-emulator-v1.11.15.jar","--host","localhost","--port",8080,"--rules","/Users/sebdum/Repositories/jsmentor-firebase/firestore.rules","--functions_emulator","localhost:5001"],"optionalArgs":["port","webchannel_port","host","rules","functions_emulator","seed_from_export"],"joinArgs":false} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"/Users/sebdum/.cache/firebase/emulators/cloud-firestore-emulator-v1.11.15.jar\",\"--host\",\"localhost\",\"--port\",8080,\"--rules\",\"/Users/sebdum/Repositories/jsmentor-firebase/firestore.rules\",\"--functions_emulator\",\"localhost:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"functions_emulator\",\"seed_from_export\"],\"joinArgs\":false}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[debug] [2021-05-17T18:26:50.544Z] May 17, 2021 8:26:50 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start
+INFO: Started WebSocket server on ws://localhost:62683
+ {"metadata":{"emulator":{"name":"firestore"},"message":"May 17, 2021 8:26:50 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start\nINFO: Started WebSocket server on ws://localhost:62683\n"}}
+[debug] [2021-05-17T18:26:50.577Z] API endpoint: http:// {"metadata":{"emulator":{"name":"firestore"},"message":"API endpoint: http://"}}
+[debug] [2021-05-17T18:26:50.577Z] localhost {"metadata":{"emulator":{"name":"firestore"},"message":"localhost"}}
+[debug] [2021-05-17T18:26:50.577Z] :8080
+If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
+
+   export FIRESTORE_EMULATOR_HOST= {"metadata":{"emulator":{"name":"firestore"},"message":":8080\nIf you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:\n\n   export FIRESTORE_EMULATOR_HOST="}}
+[debug] [2021-05-17T18:26:50.577Z] localhost:8080
+
+Dev App Server is now running.
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"localhost:8080\n\nDev App Server is now running.\n\n"}}
+[debug] [2021-05-17T18:26:53.704Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"pubsub"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2021-05-17T18:26:53.704Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"pubsub"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2021-05-17T18:26:53.704Z] Starting Pub/Sub Emulator with command {"binary":"/Users/sebdum/.cache/firebase/emulators/pubsub-emulator-0.1.0/pubsub-emulator/bin/cloud-pubsub-emulator","args":["--host=localhost","--port=8085"],"optionalArgs":["port","host"],"joinArgs":true} {"metadata":{"emulator":{"name":"pubsub"},"message":"Starting Pub/Sub Emulator with command {\"binary\":\"/Users/sebdum/.cache/firebase/emulators/pubsub-emulator-0.1.0/pubsub-emulator/bin/cloud-pubsub-emulator\",\"args\":[\"--host=localhost\",\"--port=8085\"],\"optionalArgs\":[\"port\",\"host\"],\"joinArgs\":true}"}}
+[info] i  pubsub: Pub/Sub Emulator logging to pubsub-debug.log {"metadata":{"emulator":{"name":"pubsub"},"message":"Pub/Sub Emulator logging to \u001b[1mpubsub-debug.log\u001b[22m"}}
+[debug] [2021-05-17T18:26:53.960Z] This is the Google Pub/Sub fake.
+Implementation may be incomplete or differ from the real system.
+ {"metadata":{"emulator":{"name":"pubsub"},"message":"This is the Google Pub/Sub fake.\nImplementation may be incomplete or differ from the real system.\n"}}
+[debug] [2021-05-17T18:26:54.020Z] May 17, 2021 8:26:53 PM com.google.cloud.pubsub.testing.v1.Main main
+INFO: IAM integration is disabled. IAM policy methods and ACL checks are not supported
+ {"metadata":{"emulator":{"name":"pubsub"},"message":"May 17, 2021 8:26:53 PM com.google.cloud.pubsub.testing.v1.Main main\nINFO: IAM integration is disabled. IAM policy methods and ACL checks are not supported\n"}}
+[debug] [2021-05-17T18:26:54.590Z] May 17, 2021 8:26:54 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"May 17, 2021 8:26:54 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2021-05-17T18:26:54.678Z] May 17, 2021 8:26:54 PM io.gapi.emulators.netty.NettyUtil applyJava7LongHostnameWorkaround
+INFO: Unable to apply Java 7 long hostname workaround.
+ {"metadata":{"emulator":{"name":"pubsub"},"message":"May 17, 2021 8:26:54 PM io.gapi.emulators.netty.NettyUtil applyJava7LongHostnameWorkaround\nINFO: Unable to apply Java 7 long hostname workaround.\n"}}
+[debug] [2021-05-17T18:26:54.789Z] May 17, 2021 8:26:54 PM com.google.cloud.pubsub.testing.v1.Main main
+INFO: Server started, listening on 8085
+ {"metadata":{"emulator":{"name":"pubsub"},"message":"May 17, 2021 8:26:54 PM com.google.cloud.pubsub.testing.v1.Main main\nINFO: Server started, listening on 8085\n"}}
+[debug] [2021-05-17T18:26:54.986Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/jsmentor-firebase/sites 
+[debug] [2021-05-17T18:26:55.091Z] May 17, 2021 8:26:55 PM io.gapi.emulators.grpc.GrpcServer$3 operationComplete
+INFO: Adding handler(s) to newly registered Channel.
+ {"metadata":{"emulator":{"name":"pubsub"},"message":"May 17, 2021 8:26:55 PM io.gapi.emulators.grpc.GrpcServer$3 operationComplete\nINFO: Adding handler(s) to newly registered Channel.\n"}}
+[debug] [2021-05-17T18:26:55.326Z] May 17, 2021 8:26:55 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"May 17, 2021 8:26:55 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2021-05-17T18:26:55.352Z] May 17, 2021 8:26:55 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"May 17, 2021 8:26:55 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2021-05-17T18:26:55.526Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/jsmentor-firebase/sites 200
+[debug] [2021-05-17T18:26:55.526Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/jsmentor-firebase/sites {"sites":[{"name":"projects/1072687898543/sites/jsmentor-firebase","defaultUrl":"https://jsmentor-firebase.web.app","appId":"1:1072687898543:web:f364c2f373325511d6995a","type":"DEFAULT_SITE"}]}
+[debug] [2021-05-17T18:26:55.526Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/jsmentor-firebase/webApps/1:1072687898543:web:f364c2f373325511d6995a/config [none]
+[debug] [2021-05-17T18:26:56.328Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/jsmentor-firebase/webApps/1:1072687898543:web:f364c2f373325511d6995a/config 200
+[debug] [2021-05-17T18:26:56.329Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/jsmentor-firebase/webApps/1:1072687898543:web:f364c2f373325511d6995a/config {"projectId":"jsmentor-firebase","appId":"1:1072687898543:web:f364c2f373325511d6995a","storageBucket":"jsmentor-firebase.appspot.com","locationId":"us-central","apiKey":"AIzaSyDAkwQhOFisA9hfT_xd0ywsILKkNplmHBA","authDomain":"jsmentor-firebase.firebaseapp.com","messagingSenderId":"1072687898543"}
+[info] i  hosting: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[debug] [2021-05-17T18:26:56.638Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2021-05-17T18:26:56.639Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2021-05-17T18:26:56.639Z] Starting Emulator UI with command {"binary":"node","args":["/Users/sebdum/.cache/firebase/emulators/ui-v1.4.2/server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/Users/sebdum/.cache/firebase/emulators/ui-v1.4.2/server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2021-05-17T18:26:56.723Z] Web / API server started at http://localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at http://localhost:4000\n"}}
+[info] i  functions: Watching "/Users/sebdum/Repositories/jsmentor-firebase/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/sebdum/Repositories/jsmentor-firebase/functions\" for Cloud Functions..."}}
+[debug] [2021-05-17T18:26:56.905Z] [worker-pool] addWorker(~diagnostic~) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(~diagnostic~)"}}
+[debug] [2021-05-17T18:26:56.905Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key ~diagnostic~, total=1"}}
+[debug] [2021-05-17T18:26:56.906Z] [worker-pool] submitWork(triggerId=) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=)"}}
+[debug] [2021-05-17T18:26:56.906Z] [worker-~diagnostic~-f17ab9e9-21f3-43ca-a3ee-f40fff6c06d4]: Assigning socketPath: /var/folders/x5/m55zjrv56vlfs8y73llyqqr40000gn/T/fire_emu_58205.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-f17ab9e9-21f3-43ca-a3ee-f40fff6c06d4]: Assigning socketPath: /var/folders/x5/m55zjrv56vlfs8y73llyqqr40000gn/T/fire_emu_58205.sock"}}
+[debug] [2021-05-17T18:26:56.906Z] [worker-~diagnostic~-f17ab9e9-21f3-43ca-a3ee-f40fff6c06d4]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-f17ab9e9-21f3-43ca-a3ee-f40fff6c06d4]: BUSY"}}
+[debug] [2021-05-17T18:26:57.066Z] [runtime-status] [58205] Functions runtime initialized. {"cwd":"/Users/sebdum/Repositories/jsmentor-firebase/functions","node_version":"12.18.3"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [58205] Functions runtime initialized. {\"cwd\":\"/Users/sebdum/Repositories/jsmentor-firebase/functions\",\"node_version\":\"12.18.3\"}"}}
+[debug] [2021-05-17T18:26:57.066Z] [runtime-status] [58205] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [58205] Disabled runtime features: undefined"}}
+[debug] [2021-05-17T18:26:57.068Z] [runtime-status] [58205] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.8.0","resolution":"/Users/sebdum/Repositories/jsmentor-firebase/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [58205] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.8.0\",\"resolution\":\"/Users/sebdum/Repositories/jsmentor-firebase/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2021-05-17T18:26:57.069Z] [runtime-status] [58205] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.14.0","resolution":"/Users/sebdum/Repositories/jsmentor-firebase/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [58205] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.14.0\",\"resolution\":\"/Users/sebdum/Repositories/jsmentor-firebase/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2021-05-17T18:26:57.070Z] [runtime-status] [58205] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.14.0","resolution":"/Users/sebdum/Repositories/jsmentor-firebase/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [58205] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.14.0\",\"resolution\":\"/Users/sebdum/Repositories/jsmentor-firebase/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2021-05-17T18:26:57.070Z] [runtime-status] [58205] Set PUBSUB_EMULATOR_HOST to localhost:8085 {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [58205] Set PUBSUB_EMULATOR_HOST to localhost:8085"}}
+[debug] [2021-05-17T18:26:57.071Z] [runtime-status] [58205] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [58205] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2021-05-17T18:26:57.072Z] [runtime-status] [58205] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.14.0","resolution":"/Users/sebdum/Repositories/jsmentor-firebase/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [58205] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.14.0\",\"resolution\":\"/Users/sebdum/Repositories/jsmentor-firebase/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2021-05-17T18:26:57.120Z] [runtime-status] [58205] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [58205] Checked functions.config() {\"config\":{}}"}}
+[debug] [2021-05-17T18:26:57.121Z] [runtime-status] [58205] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.14.0","resolution":"/Users/sebdum/Repositories/jsmentor-firebase/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [58205] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.14.0\",\"resolution\":\"/Users/sebdum/Repositories/jsmentor-firebase/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2021-05-17T18:26:57.121Z] [runtime-status] [58205] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.14.0","resolution":"/Users/sebdum/Repositories/jsmentor-firebase/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [58205] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.14.0\",\"resolution\":\"/Users/sebdum/Repositories/jsmentor-firebase/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2021-05-17T18:26:57.123Z] [runtime-status] [58205] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.8.0","resolution":"/Users/sebdum/Repositories/jsmentor-firebase/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [58205] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.8.0\",\"resolution\":\"/Users/sebdum/Repositories/jsmentor-firebase/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2021-05-17T18:26:57.123Z] [runtime-status] [58205] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.14.0","resolution":"/Users/sebdum/Repositories/jsmentor-firebase/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [58205] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.14.0\",\"resolution\":\"/Users/sebdum/Repositories/jsmentor-firebase/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2021-05-17T18:26:57.123Z] [runtime-status] [58205] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.8.0","resolution":"/Users/sebdum/Repositories/jsmentor-firebase/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [58205] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"9.8.0\",\"resolution\":\"/Users/sebdum/Repositories/jsmentor-firebase/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2021-05-17T18:26:57.125Z] [runtime-status] [58205] initializeApp(DEFAULT) {"storageBucket":"jsmentor-firebase.appspot.com","projectId":"jsmentor-firebase"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [58205] initializeApp(DEFAULT) {\"storageBucket\":\"jsmentor-firebase.appspot.com\",\"projectId\":\"jsmentor-firebase\"}"}}
+[debug] [2021-05-17T18:26:57.127Z] addAuthTrigger {"eventTrigger":{"resource":"projects/jsmentor-firebase","eventType":"providers/firebase.auth/eventTypes/user.create","service":"firebaseauth.googleapis.com"}}
+[info] ✔  functions[onUserCreate]: auth function initialized. {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mauth\u001b[22m function initialized."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────────┬────────────────┬─────────────────────────────────┐
+│ Emulator       │ Host:Port      │ View in Emulator UI             │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Authentication │ localhost:9099 │ http://localhost:4000/auth      │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Functions      │ localhost:5001 │ http://localhost:4000/functions │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Firestore      │ localhost:8080 │ http://localhost:4000/firestore │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Hosting        │ localhost:5000 │ n/a                             │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Pub/Sub        │ localhost:8085 │ n/a                             │
+└────────────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2021-05-17T18:26:57.130Z] [worker-~diagnostic~-f17ab9e9-21f3-43ca-a3ee-f40fff6c06d4]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-f17ab9e9-21f3-43ca-a3ee-f40fff6c06d4]: IDLE"}}
+[debug] [2021-05-17T18:26:59.993Z] May 17, 2021 8:26:59 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"May 17, 2021 8:26:59 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2021-05-17T18:27:00.086Z] May 17, 2021 8:27:00 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"May 17, 2021 8:27:00 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected HTTP/2 connection.\n"}}
+[debug] [2021-05-17T18:27:00.188Z] May 17, 2021 8:27:00 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"May 17, 2021 8:27:00 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2021-05-17T18:27:00.295Z] May 17, 2021 8:27:00 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"May 17, 2021 8:27:00 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2021-05-17T18:27:00.411Z] May 17, 2021 8:27:00 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"May 17, 2021 8:27:00 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
