@@ -1,25 +1,32 @@
 import React, { useEffect } from "react";
 import "./App.css";
+import { FirebaseAuthProvider } from "./FirebaseAuthProvider";
 import { FirebaseProvider } from "./FirebaseProvider";
-import firebase from "firebase/app";
 
 export const App: React.FC = () => {
+  // const { setListenerForAllExamples } = useFirebaseExamples("examples");
+
   useEffect(() => {
-    firebase.app().firestore().collection("test").add({ test: "lala" });
+    // pushExample({ test: "jedan", description: "dva" });
+    // getAllExamples().then((items) => console.log({ items }));
+    // const unsubscribeListener = setListenerForAllExamples();
+    // return unsubscribeListener;
   }, []);
 
   return (
     <FirebaseProvider>
-      <div className="App">
-        <h1>JS Mentor</h1>
+      <FirebaseAuthProvider>
+        <div className="App">
+          <h1>JS Mentor</h1>
 
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque,
-          repellendus. Illum incidunt consequuntur expedita delectus ex,
-          molestiae eligendi, fugit placeat recusandae maiores earum adipisci
-          ducimus nisi aliquid doloremque cumque sapiente?
-        </p>
-      </div>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque,
+            repellendus. Illum incidunt consequuntur expedita delectus ex,
+            molestiae eligendi, fugit placeat recusandae maiores earum adipisci
+            ducimus nisi aliquid doloremque cumque sapiente?
+          </p>
+        </div>
+      </FirebaseAuthProvider>
     </FirebaseProvider>
   );
 };
