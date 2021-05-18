@@ -5,17 +5,22 @@ export const useFirebaseExamples = (collectionId: string) => {
     return firebase.app().firestore().collection(collectionId);
   }
 
+  function callFunction() {
+    firebase.app().functions().httpsCallable("fetchPrivateInformation");
+  }
+
   /** Basic type of adding documents */
   function pushExample(exampleData: any) {
+    // getCollectionReference().doc("ne postoji").set(exampleData);
     getCollectionReference().add(exampleData);
   }
 
   /** Basic fetch to get all relevant documents once. */
   async function getAllExamples() {
     const resultPromise = await getCollectionReference().get();
-
     const resolvedItems = resultPromise.docs.map((doc) => {
-      return doc.id, doc.data();
+      return { id: doc.id, ...doc.data() };
+      // return doc.data();
     });
 
     return resolvedItems;
@@ -24,7 +29,7 @@ export const useFirebaseExamples = (collectionId: string) => {
   /** Used to fetch only filtered documents from Firestore. Used when fetching only documents belonging to a certain user, filtering by search field, fetching single type of documents, and other... */
   async function getSomeExamples() {
     const resultPromise = await getCollectionReference()
-      .where("description", "==", "test")
+      .where("description", "==", "dva")
       .get();
 
     const resolvedItems = resultPromise.docs.map((doc) => {
@@ -43,6 +48,7 @@ export const useFirebaseExamples = (collectionId: string) => {
           ...doc.data(),
         }));
 
+        // Success dispatch na Redux
         console.log(items);
 
         return items;
@@ -57,5 +63,6 @@ export const useFirebaseExamples = (collectionId: string) => {
     getAllExamples,
     setListenerForAllExamples,
     getSomeExamples,
+    callFunction,
   };
 };

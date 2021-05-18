@@ -7,6 +7,7 @@ export function useAuthSubscription() {
       .app()
       .auth()
       .onAuthStateChanged(async (user) => {
+        console.log({ user });
         if (!user) {
           // handles logout. Dispatch logout action here.
           return;

@@ -1,11 +1,11 @@
-import firebase from "firebase";
+import firebase from "firebase/app";
 import { useEffect } from "react";
 import { useAuthSubscription } from "./useAuthSubscription";
 
 export const FirebaseAuthProvider: React.FC = ({ children }) => {
   useAuthSubscription();
 
-  // Mock succesfull login
+  // Mock successful login
   useEffect(() => {
     firebase
       .app()
@@ -14,9 +14,11 @@ export const FirebaseAuthProvider: React.FC = ({ children }) => {
       .then((_user) => {
         // Don't have to do anything with the user here
       })
-      .catch((err) => {
+      .catch((err: firebase.FirebaseError) => {
         // Show the error to the user.
-        console.error(err);
+        if (err.code === '"auth/wrong-password"') {
+          // dispatch error to redux
+        }
       });
   }, []);
 
